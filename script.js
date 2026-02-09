@@ -2,8 +2,8 @@ const noBtn = document.getElementById("noBtn");
 
 if (noBtn) {
   noBtn.addEventListener("mouseover", () => {
-    const x = Math.random() * 200 - 100;
-    const y = Math.random() * 200 - 100;
+    const x = Math.random() * 500 - 100;
+    const y = Math.random() * 400 - 100;
     noBtn.style.transform = `translate(${x}px, ${y}px)`;
   });
 }
