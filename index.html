@@ -2,17 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>For You ❤️</title>
+  <title>Happy Anniversary ❤️</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="center">
-  <h1>Will you be my Valentine? 💘</h1>
 
-  <div class="buttons">
-    <button class="yes" onclick="goYes()">YES 💖</button>
-    <button class="no" id="noBtn">NO 💔</button>
-  </div>
+  <h1 class="ann-title">Happy 1 Year Anniversary, My Love 💞</h1>
 
-  <script src="script.js"></script>
+  <p class="ann-sub">
+    One year of us. <br>
+    A thousand moments. <br>
+    And a heart that still chooses you every day ❤️
+  </p>
+
+  <button class="yes" onclick="goNext()">Continue 💖</button>
+
+  <div class="ann-hearts">❤️ 💖 💕 💗 💓</div>
+
+  <script>
+    function goNext() {
+      window.location.href = "valentine.html";
+    }
+  </script>
+
 </body>
 </html>
