@@ -1,6 +1,6 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+  background: linear-gradient(to bottom, #fff5f7, #f3c6d3);
   margin: 0;
   min-height: 100vh;
   color: #333;
@@ -45,9 +45,11 @@ button {
 }
 
 .yes {
-  background-color: #ff4d6d;
+  background-color: #e75480; /* muted rose */
   color: white;
 }
+
+
 
 .no {
   background-color: #adb5bd;
