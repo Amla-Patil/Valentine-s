@@ -132,3 +132,45 @@ button {
   font-size: 22px;
   opacity: 0.7;
 }
+/* TIMELINE EXTRA SECTION */
+.timeline-title {
+  font-size: 1.8rem;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.event {
+  background: white;
+  padding: 15px 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  animation: slideIn 0.6s ease forwards;
+  opacity: 0;
+  max-width: 420px;
+}
+
+/* staggered animation */
+.event:nth-child(1) { animation-delay: 0.2s; }
+.event:nth-child(2) { animation-delay: 0.4s; }
+.event:nth-child(3) { animation-delay: 0.6s; }
+.event:nth-child(4) { animation-delay: 0.8s; }
+.event:nth-child(5) { animation-delay: 1s; }
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
