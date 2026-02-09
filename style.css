@@ -41,3 +41,11 @@ button {
   color: white;
   position: absolute;
 }
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  width: 300px;
+  text-align: center;
+  margin-bottom: 30px;
+}
