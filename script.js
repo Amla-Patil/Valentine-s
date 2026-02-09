@@ -14,3 +14,19 @@ document.addEventListener("click", () => {
     music.play();
   }
 });
+const music = document.getElementById("bgMusic");
+
+// if user already allowed music earlier
+if (sessionStorage.getItem("musicPlaying") === "true") {
+  music.volume = 0.4;
+  music.play().catch(() => {});
+}
+
+// on first click anywhere
+document.addEventListener("click", () => {
+  if (music && music.paused) {
+    music.volume = 0.4;
+    music.play();
+    sessionStorage.setItem("musicPlaying", "true");
+  }
+});
