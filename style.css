@@ -1,9 +1,10 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to bottom, #fff5f7, #f3c6d3);
+  background: linear-gradient(to bottom, #fff8fa, #eed1da);
   margin: 0;
   min-height: 100vh;
-  color: #333;
+  color: #444;
+  letter-spacing: 0.2px;
 }
 
 .center {
@@ -31,7 +32,7 @@ body {
   position: fixed;
   bottom: 20px;
   font-size: 24px;
-  opacity: 0.7;
+  opacity: 0.45;
 }
 
 /* BUTTONS */
@@ -45,14 +46,12 @@ button {
 }
 
 .yes {
-  background-color: #e75480; /* muted rose */
-  color: white;
+  background-color: #d96a88; /* dusty rose */
+  color: #ffffff;
 }
 
-
-
 .no {
-  background-color: #adb5bd;
+  background-color: #b6b6b6;
   color: white;
   position: absolute;
 }
@@ -80,7 +79,7 @@ button {
   background: white;
   padding: 10px 10px 30px;
   border-radius: 10px;
-  box-shadow: 0 15px 25px rgba(0,0,0,0.25);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
   transform: rotate(-2deg);
   transition: transform 0.3s ease;
 }
@@ -93,13 +92,13 @@ button {
   transform: scale(1.05) rotate(0deg);
 }
 
-
 .love-text {
   text-align: center;
   font-size: 18px;
   margin: 40px 20px 60px;
   line-height: 1.6;
 }
+
 /* DATE PAGE */
 .date-title {
   font-size: 2.5rem;
@@ -110,7 +109,7 @@ button {
   background: white;
   padding: 25px 30px;
   border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
   max-width: 350px;
   text-align: left;
   margin-bottom: 25px;
@@ -132,8 +131,9 @@ button {
   position: fixed;
   bottom: 20px;
   font-size: 22px;
-  opacity: 0.7;
+  opacity: 0.45;
 }
+
 /* TIMELINE EXTRA SECTION */
 .timeline-title {
   font-size: 1.8rem;
@@ -152,7 +152,7 @@ button {
   background: white;
   padding: 15px 20px;
   border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
   animation: slideIn 0.6s ease forwards;
   opacity: 0;
   max-width: 420px;
@@ -175,7 +175,8 @@ button {
     opacity: 1;
   }
 }
+
+/* SMOOTH TRANSITIONS */
 * {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-
