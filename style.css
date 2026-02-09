@@ -1,0 +1,43 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+  height: 100vh;
+  margin: 0;
+  color: #333;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.buttons {
+  position: relative;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.yes {
+  background-color: #ff4d6d;
+  color: white;
+}
+
+.no {
+  background-color: #adb5bd;
+  color: white;
+  position: absolute;
+}
